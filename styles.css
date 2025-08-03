@@ -359,6 +359,9 @@ body {
     text-align: center;
     transition: all 0.3s ease;
     box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .community-card:hover {
@@ -384,6 +387,12 @@ body {
     color: var(--text-secondary);
     margin-bottom: 1.5rem;
     line-height: 1.6;
+    flex-grow: 1;
+}
+
+.community-card .btn {
+    margin-top: auto;
+    justify-content: center;
 }
 
 /* Roadmap Preview */
