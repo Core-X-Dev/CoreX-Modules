@@ -32,7 +32,7 @@ These modules are developed by the community:
 ### Method 2: Git Installation
 ```bash
 cd CoreX-Modules
-git clone https://github.com/Legacy-DEV-Team/module-name.git
+git clone https://github.com/Core-X-Dev/CoreX-Modules.git
 ```
 
 ## Creating Your Own Module
