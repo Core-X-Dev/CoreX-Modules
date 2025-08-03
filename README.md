@@ -23,10 +23,10 @@ These modules are developed by the community:
 
 ### Method 1: Manual Installation
 1. Download the module from the releases page
-2. Extract to your `CoreX-Modules/` directory
+2. Extract to your `[CoreX-Modules]/` directory
 3. Add the module to your `server.cfg`:
    ```cfg
-   ensure CoreX-Modules/module-name
+   ensure [CoreX-Modules]/module-name
    ```
 
 ### Method 2: Git Installation
