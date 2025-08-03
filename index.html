@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoreX Modules - FiveM Framework Modules</title>
+    <meta name="theme-color" content="#111827">
+    
+    <!-- Security Headers -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data:; connect-src 'self';">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    
+    <!-- SEO and Social Meta Tags -->
+    <meta name="description" content="CoreX Modules - A comprehensive collection of modules for the CoreX Framework. Browse and download modules to extend your FiveM server functionality.">
+    <meta name="keywords" content="FiveM, CoreX, Modules, Framework, Lua, Gaming, Server, Development, Plugins">
+    <meta name="author" content="CoreX">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="CoreX Modules - FiveM Framework Modules">
+    <meta property="og:description" content="Browse and download modules to extend your CoreX Framework functionality.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://modules.core-x.dev/">
+    <meta property="og:image" content="https://modules.core-x.dev/assets/corex-logo.png">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CoreX Modules - FiveM Framework Modules">
+    <meta name="twitter:description" content="Browse and download modules to extend your CoreX Framework functionality.">
+    <meta name="twitter:image" content="https://modules.core-x.dev/assets/corex-logo.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://modules.core-x.dev/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/corex-icon.png">
+    
+    <!-- Preconnect to external domains for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <nav class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <img src="assets/corex-logo.png" alt="CoreX Framework Logo" class="corex-logo" />
+                <button class="theme-toggle" id="theme-toggle" title="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            
+            <div class="sidebar-content">
+                <ul class="nav-menu">
+                    <li><a href="#overview" class="nav-link active"><i class="fas fa-home"></i> Overview</a></li>
+                    <li><a href="#core-modules" class="nav-link"><i class="fas fa-cube"></i> Core Modules</a></li>
+                    <li><a href="#community-modules" class="nav-link"><i class="fas fa-users"></i> Community Modules</a></li>
+                    <li><a href="#development-tools" class="nav-link"><i class="fas fa-tools"></i> Development Tools</a></li>
+                    <li><a href="#installation" class="nav-link"><i class="fas fa-download"></i> Installation</a></li>
+                    <li><a href="#contributing" class="nav-link"><i class="fas fa-code"></i> Contributing</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="content-wrapper">
+                <!-- Overview Section -->
+                <section id="overview" class="section">
+                    <center><img src="assets/corex-logo.png" alt="CoreX Framework Logo" class="corex-logo" style="width: 700px"/></center>
+                    <h1>CoreX Modules</h1>
+                    <p class="lead">Extend your CoreX Framework with powerful modules and plugins.</p>
+                    
+                    <div class="version-badge">
+                        <span class="version-number">v1.0.2.0</span>
+                        <span class="version-status">Active Development</span>
+                    </div>
+
+                    <p>CoreX Modules provides a comprehensive collection of modules, plugins, and tools to enhance your FiveM server experience. From core functionality to community-contributed modules, find everything you need to build the perfect server.</p>
+                </section>
+
+                <!-- Core Modules Section -->
+                <section id="core-modules" class="section">
+                    <h2>🔧 Core Modules</h2>
+                    <p>Essential modules that provide core functionality for your CoreX Framework server.</p>
+                    
+                    <div class="modules-grid">
+                        <div class="module-card">
+                            <div class="module-header">
+                                <i class="fas fa-database"></i>
+                                <h3>CoreX</h3>
+                            </div>
+                            <p>The main CoreX Framework module that provides the foundation for all other modules.</p>
+                            <ul>
+                                <li>Modular architecture with dynamic loading</li>
+                                <li>Built-in MySQL support with oxmysql</li>
+                                <li>Multi-character system with perma-death</li>
+                                <li>Discord integration and role-based permissions</li>
+                                <li>Comprehensive security and audit logging</li>
+                            </ul>
+                            <div class="module-links">
+                                <a href="https://github.com/Core-X-Dev/CoreX" class="btn btn-primary" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                    View Repository
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="module-card">
+                            <div class="module-header">
+                                <i class="fas fa-book"></i>
+                                <h3>CoreX-Docs</h3>
+                            </div>
+                            <p>Comprehensive documentation for the CoreX Framework with installation guides and API references.</p>
+                            <ul>
+                                <li>Complete installation guide</li>
+                                <li>API documentation and examples</li>
+                                <li>Configuration tutorials</li>
+                                <li>Best practices and troubleshooting</li>
+                                <li>Community-contributed guides</li>
+                            </ul>
+                            <div class="module-links">
+                                <a href="https://github.com/Core-X-Dev/CoreX-Docs" class="btn btn-primary" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                    View Repository
+                                </a>
+                                <a href="https://docs.core-x.dev/" class="btn btn-secondary" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    View Docs
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="module-card">
+                            <div class="module-header">
+                                <i class="fas fa-map"></i>
+                                <h3>CoreX-Roadmap</h3>
+                            </div>
+                            <p>Development roadmap and feature planning for the CoreX Framework ecosystem.</p>
+                            <ul>
+                                <li>Current development status</li>
+                                <li>Short-term and long-term goals</li>
+                                <li>Feature priority matrix</li>
+                                <li>Release schedule and milestones</li>
+                                <li>Community feedback integration</li>
+                            </ul>
+                            <div class="module-links">
+                                <a href="https://github.com/Core-X-Dev/CoreX-Roadmap" class="btn btn-primary" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                    View Repository
+                                </a>
+                                <a href="https://roadmap.core-x.dev/" class="btn btn-secondary" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    View Roadmap
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Community Modules Section -->
+                <section id="community-modules" class="section">
+                    <h2>👥 Community Modules</h2>
+                    <p>Modules created by the CoreX community to extend functionality and add new features.</p>
+                    
+                    <div class="modules-grid">
+                        <div class="module-card">
+                            <div class="module-header">
+                                <i class="fas fa-utensils"></i>
+                                <h3>CoreX-Recipe</h3>
+                            </div>
+                            <p>Step-by-step guides and recipes for common FiveM server configurations and setups.</p>
+                            <ul>
+                                <li>Server setup tutorials</li>
+                                <li>Configuration recipes</li>
+                                <li>Integration guides</li>
+                                <li>Performance optimization tips</li>
+                                <li>Community best practices</li>
+                            </ul>
+                            <div class="module-links">
+                                <a href="https://github.com/Core-X-Dev/CoreX-Recipe" class="btn btn-primary" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                    View Repository
+                                </a>
+                                <a href="https://recipe.core-x.dev/" class="btn btn-secondary" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    View Recipes
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="module-card">
+                            <div class="module-header">
+                                <i class="fas fa-puzzle-piece"></i>
+                                <h3>CoreX-Modules</h3>
+                            </div>
+                            <p>Central hub for discovering and managing CoreX Framework modules and plugins.</p>
+                            <ul>
+                                <li>Module discovery and browsing</li>
+                                <li>Installation guides for each module</li>
+                                <li>Compatibility information</li>
+                                <li>Community ratings and reviews</li>
+                                <li>Module submission guidelines</li>
+                            </ul>
+                            <div class="module-links">
+                                <a href="https://github.com/Core-X-Dev/CoreX-Modules" class="btn btn-primary" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                    View Repository
+                                </a>
+                                <a href="https://modules.core-x.dev/" class="btn btn-secondary" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Browse Modules
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="module-card">
+                            <div class="module-header">
+                                <i class="fas fa-globe"></i>
+                                <h3>CoreX-Website</h3>
+                            </div>
+                            <p>Main website for the CoreX Framework ecosystem with links to all resources.</p>
+                            <ul>
+                                <li>Framework overview and features</li>
+                                <li>Quick start guide</li>
+                                <li>Resource links and navigation</li>
+                                <li>Community information</li>
+                                <li>Development roadmap preview</li>
+                            </ul>
+                            <div class="module-links">
+                                <a href="https://github.com/Core-X-Dev/CoreX-Website" class="btn btn-primary" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                    View Repository
+                                </a>
+                                <a href="https://core-x.dev/" class="btn btn-secondary" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Visit Website
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Development Tools Section -->
+                <section id="development-tools" class="section">
+                    <h2>🛠️ Development Tools</h2>
+                    <p>Tools and utilities to help developers create and maintain CoreX modules.</p>
+                    
+                    <div class="modules-grid">
+                        <div class="module-card">
+                            <div class="module-header">
+                                <i class="fas fa-code"></i>
+                                <h3>Module Template</h3>
+                            </div>
+                            <p>Standardized template for creating new CoreX modules with best practices.</p>
+                            <ul>
+                                <li>Pre-configured module structure</li>
+                                <li>Documentation templates</li>
+                                <li>Testing framework setup</li>
+                                <li>CI/CD pipeline configuration</li>
+                                <li>Code quality standards</li>
+                            </ul>
+                            <div class="module-links">
+                                <a href="#" class="btn btn-primary" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                    Coming Soon
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="module-card">
+                            <div class="module-header">
+                                <i class="fas fa-bug"></i>
+                                <h3>Debug Tools</h3>
+                            </div>
+                            <p>Development and debugging tools for CoreX Framework modules.</p>
+                            <ul>
+                                <li>Module debugging utilities</li>
+                                <li>Performance monitoring tools</li>
+                                <li>Error tracking and reporting</li>
+                                <li>Log analysis tools</li>
+                                <li>Testing automation</li>
+                            </ul>
+                            <div class="module-links">
+                                <a href="#" class="btn btn-primary" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                    Coming Soon
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="module-card">
+                            <div class="module-header">
+                                <i class="fas fa-rocket"></i>
+                                <h3>Deployment Tools</h3>
+                            </div>
+                            <p>Automated deployment and distribution tools for CoreX modules.</p>
+                            <ul>
+                                <li>Automated build pipelines</li>
+                                <li>Version management tools</li>
+                                <li>Distribution automation</li>
+                                <li>Update notification system</li>
+                                <li>Compatibility checking</li>
+                            </ul>
+                            <div class="module-links">
+                                <a href="#" class="btn btn-primary" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                    Coming Soon
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Installation Section -->
+                <section id="installation" class="section">
+                    <h2>📦 Installation Guide</h2>
+                    <p>Learn how to install and configure CoreX modules on your server.</p>
+                    
+                    <div class="quick-start-grid">
+                        <div class="step-card">
+                            <div class="step-number">1</div>
+                            <h3>Choose Your Module</h3>
+                            <p>Browse the available modules and select the ones you need for your server.</p>
+                            <div class="alert alert-info">
+                                <i class="fas fa-info-circle"></i>
+                                <strong>Tip:</strong> Start with core modules before adding community modules
+                            </div>
+                        </div>
+                        
+                        <div class="step-card">
+                            <div class="step-number">2</div>
+                            <h3>Download Module</h3>
+                            <p>Clone the module repository or download the latest release from GitHub.</p>
+                            <div class="code-block">
+                                <div class="code-header">
+                                    <span>Terminal</span>
+                                    <button class="copy-btn" onclick="copyCode('module-download')">
+                                        <i class="fas fa-copy"></i>
+                                    </button>
+                                </div>
+                                <pre id="module-download"><code>git clone https://github.com/Core-X-Dev/CoreX-[ModuleName].git
+cd CoreX-[ModuleName]</code></pre>
+                            </div>
+                        </div>
+                        
+                        <div class="step-card">
+                            <div class="step-number">3</div>
+                            <h3>Install Module</h3>
+                            <p>Follow the module's specific installation instructions and configure as needed.</p>
+                            <div class="code-block">
+                                <div class="code-header">
+                                    <span>server.cfg</span>
+                                    <button class="copy-btn" onclick="copyCode('module-config')">
+                                        <i class="fas fa-copy"></i>
+                                    </button>
+                                </div>
+                                <pre id="module-config"><code>ensure CoreX
+ensure CoreX-[ModuleName]</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Contributing Section -->
+                <section id="contributing" class="section">
+                    <h2>🤝 Contributing</h2>
+                    <p>Help improve CoreX Framework by contributing modules, documentation, or code.</p>
+                    
+                    <div class="community-grid">
+                        <div class="community-card">
+                            <i class="fas fa-code"></i>
+                            <h3>Create Modules</h3>
+                            <p>Develop new modules for CoreX Framework and share them with the community.</p>
+                            <a href="https://github.com/Core-X-Dev/CoreX-Modules" class="btn btn-secondary" target="_blank">
+                                <i class="fas fa-code"></i>
+                                Module Guidelines
+                            </a>
+                        </div>
+                        
+                        <div class="community-card">
+                            <i class="fas fa-book"></i>
+                            <h3>Improve Documentation</h3>
+                            <p>Help improve documentation, tutorials, and guides for CoreX Framework.</p>
+                            <a href="https://github.com/Core-X-Dev/CoreX-Docs" class="btn btn-secondary" target="_blank">
+                                <i class="fas fa-book"></i>
+                                Contribute Docs
+                            </a>
+                        </div>
+                        
+                        <div class="community-card">
+                            <i class="fas fa-bug"></i>
+                            <h3>Report Issues</h3>
+                            <p>Report bugs, suggest features, or help improve existing modules.</p>
+                            <a href="https://github.com/Core-X-Dev/CoreX/issues" class="btn btn-secondary" target="_blank">
+                                <i class="fas fa-bug"></i>
+                                Report Issues
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
